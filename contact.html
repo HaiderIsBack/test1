@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Malaysian Institute of Technology</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap" rel="stylesheet">
+
+<style>
+body{
+background-color : gold ;
+color: white;
+font-family: 'Montserrat', sans-serif;
+}
+footer{
+font-family : 'Montserrat', sans-serif;
+background-color : black;
+color:azure;
+padding-top :20px;
+padding-bottom:30px;
+text-align:center;
+margin-top :1120px;
+}
+.input-bars{
+display : block;
+padding : 9px 25px;
+width : 480px;
+border: none;
+outline: none;
+margin-top : 10px;
+item-align : center;
+justify-content: center;
+font-size :30px;
+font-family : 'Montserrat', sans-serif;
+border-radius : 4px;
+}
+.back{
+background-color : crimson ;
+border-radius : 5px;
+padding : 50px 100px;
+margin: 50px 100px;
+box-shadow : 0px 3px 3px black;
+}
+.submit{
+background-color : orange ;
+font-family : 'Montserrat', sans-serif;
+border: none;
+outline : none;
+color: white;
+border-radius : 5px;
+font-size : 25px;
+font-weight : bold;
+padding : 7px 10px;
+margin-top : 10px;
+box-shadow : 0px 2px 2px black;
+}
+.submit : :hover{
+box-shadow : 3px 2px 2px black ;
+transistion : 4s;
+}
+.title{
+font-size : 60px;
+font-family :'Montserrat', sans-serif;
+white-space: 7px;
+margin-top :15px;
+margin-left : 15px;
+text-align :center;
+}
+.usericon{
+color:black;
+float:right;
+font-size :50px;
+
+}
+.backbtn{
+background-color : orange ;
+font-family : 'Montserrat', sans-serif;
+border: none;
+outline : none;
+color: white;
+border-radius : 5px;
+font-size : 25px;
+font-weight : bold;
+padding : 7px 10px;
+margin-top : 10px;
+box-shadow : 0px 2px 2px black;
+margin-left :320px;
+}
+.backlink{
+color: white;
+text-decoration :none;
+}
+</style>
+</head>
+<body>
+<div class="back">
+<h1 class="title">Feedback Form</h1>
+<form onsubmit="send(); reset(); return false;">
+
+<input type="text" placeholder ="Username" id="name" class="input-bars" autocomplete="off" required>
+
+<input type="email" placeholder ="Email" id="email" class="input-bars" required>
+<input type="text" placeholder ="Subject" id="subject" class="input-bars" autocomplete ="off">
+<textarea placeholder ="Message" id="message" cols="30" rows="6" class="input-bars" autocomplete="off" required></textarea>
+<div>
+	<button type="submit" class="submit">Submit</button>
+	<button class="backbtn"><a href="index.html" class="backlink">Back</a></button>
+</div>
+
+</form>
+</div>
+<footer>
+	<div>
+		<h3>Created by Zulqarnain</h3>
+		<p>Copyright : 2022 @ M.I.T </p>
+	</div>
+</footer>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+<script src ="index.js"></script>
+</html>
